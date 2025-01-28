@@ -2,7 +2,7 @@ package apt.dev.rpg.ui.base
 
 import androidx.lifecycle.ViewModel
 
-class BaseViewModel<E: BaseEvent, A: BaseAction>: ViewModel() {
+open class BaseViewModel<E: BaseEvent, A: BaseAction>: ViewModel() {
 
     private var eventListener: (E) -> Unit = {}
 
